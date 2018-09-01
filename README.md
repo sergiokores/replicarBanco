@@ -19,6 +19,6 @@ O script não monitora modificações. cheguei a implementar a função que comp
 os registros e só atualizava se encontrasse alguma diferença, mas em bancos com 1 milhão de registros ja buga em 
 algum ponto, afinal de contas, são duas conexões com um volume de dados imenso... 
 
-Então o que o script faz é buscar o bancar tudo que está no Master, truncar o slave e inserir os novos registros 
+Então o que o script faz é buscar  tudo que está no Master, truncar o slave e inserir os novos registros 
 atualizados... 
 
