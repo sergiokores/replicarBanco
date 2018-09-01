@@ -1,16 +1,21 @@
 # replicarBanco
-Replicar de um banco de dados master para um slave
+Replicar registros de um banco de dados master para um slave.
+
 Não foi muito facil, porem não tão dificil assim... 
 A ideia aqui foi criar um algoritmo que pudesse rodar
 sem a nescessidade de instalar pacotes adicionais ao server ou
 configurar algo diretamente no gerenciador do banco...
 
-Basta configurar o arquivo de conexão colocando os 
+Voce so precisar ter o banco master e o slave criados
+
+1- Basta configurar o arquivo de conexão colocando os 
 dados de uma conexão master (de onde você quer copiar tudo)
 
 Atente apenas para a conexão com o banco slave... pois o banco precisa existir,
 apenas crie a base de dados slave e configure a conexão slave de acordo com os 
 parametros da mesma... 
+2- Agora configure o arquivo querys.php adicionando os nomes das tabelas que deseja replicar os registros
+
 
 Configurou? Rode o index e pronto... 
 
